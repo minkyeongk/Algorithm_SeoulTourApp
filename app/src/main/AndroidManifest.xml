@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.algorithm_seoultour">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icpn"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icpn_round"
+        android:theme="@style/AppTheme"
+        android:supportsRtl="true">
+
+        <activity android:name=".ui.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.main.MainActivity" />
+        <activity
+            android:name=".ui.tab1.ChooseActivity"
+            android:label="@string/title_activity_jongnochoose"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.SpotInfoActivity"
+            android:label="@string/title_activity_spot_infomation"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.tab1.ChooseResultActivity"
+            android:label="@string/title_activity_closest_result"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.tab2.SpotListActivity"
+            android:label="@string/title_activity_spot_list"
+            android:theme="@style/AppTheme" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBeLzq4GV9c8vHwEkfP_tYjZ5xJAF4hb-I"/>
+    </application>
+
+</manifest>
